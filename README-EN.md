@@ -24,6 +24,12 @@
 
 </div>
 
+## 🌟 Special Clone Features
+
+This repository is a customized fork/clone of the original `666ghj/MiroFish` engine, containing the following critical upgrades:
+- **NVIDIA NIM API Compatibility**: Specifically patched `llm_client.py` inside the backend to prevent crashes when interacting with third-party open-source models hosted over the NVIDIA endpoints (such as `mistralai` or `nemotron`). Stripped out breaking OpenAI constraints (`response_format={"type": "json_object"}`) preventing fatal `500 API` crashes during GraphRAG Ontology generation.
+- **Enhanced Defaults**: Core configuration streamlined to support cutting-edge alternative models like `nvidia/nemotron-3-super-120b-a12b` and `nvidia/llama-3.1-nemotron-ultra-253b-v1` out of the box.
+
 ## ⚡ Overview
 
 **MiroFish** is a next-generation AI prediction engine powered by multi-agent technology. By extracting seed information from the real world (such as breaking news, policy drafts, or financial signals), it automatically constructs a high-fidelity parallel digital world. Within this space, thousands of intelligent agents with independent personalities, long-term memory, and behavioral logic freely interact and undergo social evolution. You can inject variables dynamically from a "God's-eye view" to precisely deduce future trajectories — **rehearse the future in a digital sandbox, and win decisions after countless simulations**.
